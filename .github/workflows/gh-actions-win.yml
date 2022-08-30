@@ -1,4 +1,4 @@
-name: Build on linux
+name: Build on Windows
 on: [push]
 
 env:
@@ -6,7 +6,7 @@ env:
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
       - name: debug build
@@ -15,7 +15,7 @@ jobs:
         uses: actions/upload-artifact@v3.1.0
         with:
           name: ${{ github.event.repository.name }}-debug
-          path: target/debug/${{ github.event.repository.name }}
+          path: target/debug/${{ github.event.repository.name }}.exe
       
       - name: release build
         run: cargo build --verbose --release
@@ -23,4 +23,4 @@ jobs:
         uses: actions/upload-artifact@v3.1.0
         with:
           name: ${{ github.event.repository.name }}-release
-          path: target/release/${{ github.event.repository.name }}
+          path: target/release/${{ github.event.repository.name }}.exe

@@ -2,8 +2,8 @@
 
 
 ![version](https://img.shields.io/badge/version-0.0-blue)
-![osx-workflow]()
-![win-workflow]()
+![osx-workflow](https://github.com/AdamEssemaali/rust-template/actions/workflows/gh-actions-osx.yml/badge.svg) <!-- insert your name and the repo name-->
+![win-workflow](https://github.com/AdamEssemaali/rust-template/actions/workflows/gh-actions-win.yml/badge.svg) <!-- insert your name and the repo name-->
 ![linux-workflow](https://github.com/AdamEssemaali/rust-template/actions/workflows/gh-actions-linux.yml/badge.svg) <!-- insert your name and the repo name-->
 
 *Description*
