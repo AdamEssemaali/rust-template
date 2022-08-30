@@ -12,4 +12,4 @@ jobs:
       - name: debug build
         run: |
           cargo build --verbose
-          ls
+          ls target/debug
