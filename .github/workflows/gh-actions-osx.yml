@@ -1,0 +1,15 @@
+name: Build on OSX
+on: [push]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: debug build
+        run: |
+        cargo build --verbose
+        ls
