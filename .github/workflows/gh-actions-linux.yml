@@ -15,7 +15,7 @@ jobs:
         uses: actions/upload-artifact@v3.1.0
         with:
           name: ${{ github.event.repository.name }}-debug
-          path: ${{ github.event.repository.name }}
+          path: target/debug/${{ github.event.repository.name }}
       
       - name: release build
         run: cargo build --verbose --release
