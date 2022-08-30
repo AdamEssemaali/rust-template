@@ -1,4 +1,4 @@
-name: Build on linux
+name: Build on MacOS
 on: [push]
 
 env:
